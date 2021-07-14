@@ -1,0 +1,289 @@
+/* ----------------this link for google font ------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ----------------end google font style------------------------------*/
+
+/* --------------------------------start here from header style------------------------------------------------ */
+*{
+    margin: 0px;
+}
+header{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+}
+.main-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.Titel {
+    width: 485px;
+    height: 230px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+header:hover .logo {
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+.logo img{
+    width: 556px;
+    height: 438px;
+}
+.button{
+    width: 144px;
+    height: 34px;
+    padding-top: 10px;
+    padding-left: 24px;
+    color: white;
+    background-color: #E02C6D;
+}
+.button a{
+    width: 88px;
+    height: 24px; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: white;
+}
+.button i{
+    padding-right: 0px;
+    padding-left: 5px;
+    margin-right: 0px;
+
+}
+/* --------------------------------End here from header style------------------------------------------------ */
+
+/* --------------------------------------main tag start --------------------------------------------*/
+main{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* --------------------------------------main tag end --------------------------------------------*/
+
+/*--------------------------------- playes section  starting from here -----------------------*/
+.players{
+    margin-top: 70px;
+}
+
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:45px;
+    grid-column-gap: 30px;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 456px;
+    background-color: white;
+    border: 15px solid white;
+    box-shadow: 15px 15px 15px 15px rgba(150, 137, 137, 0.082);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player h3{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+.player a{
+    width: 300px;
+    height: 104px;
+}
+/*--------------------------------- playes section end here -----------------------*/
+
+
+/* -----------------------------------section hightlight start from here ---------------------------*/
+.highlights{
+    margin-top: 60px;
+}
+.match{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+}
+.hvideo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 15px solid white;
+    box-shadow: 15px 15px 15px 15px rgba(150, 137, 137, 0.082); 
+    overflow: hidden;
+}
+.video-size{
+    overflow: hidden;
+    border-radius: 10px;
+}
+ 
+.hvideo:hover video {
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
+}
+.hvideo video{
+    width: 300px;
+    height: 150px;
+}
+.history{
+    margin-top: 15px;
+}
+.slogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.white{
+    background-color: rgb(193, 202, 202);
+    font-family: 'Poppins', sans-serif;
+}
+span{
+    background-color: red;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 5px;
+}
+/* -----------------------------------section hightlight endhere ---------------------------*/
+
+
+
+/* ------------------------------footer start from here -------------------------------------*/
+footer{
+    margin-top: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pic img{
+    position: static;
+    width: 484px;
+    height: 110px;
+}
+
+.icon{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 14px;
+    margin-top: 20px;
+    margin-left: 157px;
+    width: 170px;
+    height: 32px;
+}
+
+.icon .icond{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #969bab56;
+}
+.footer-pic h2{
+    position: static;
+    margin-left: 124px;
+    margin-top: 10px;
+    width: 400;
+    Size :18px;
+    line-height :24px;
+    margin-top: 20px;
+}
+/* ------------------------------footer end here -------------------------------------*/
+
+/* --------------------media query for tab  start from here --------------------------------------*/
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+        
+    /* headr responcive part start from here */
+    header{
+        margin-top: 112px;
+        margin-right: 10px;
+        height: 695px;
+    }
+    .main-div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-setting{
+  
+        margin-left: 80px;
+    }
+    .logo img{
+        width: 329px;
+        height: 259px;
+    }
+     /* player section part start here */
+        .all-players{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+             /* headr highlight section part start here */
+            .match{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+         
+    }
+
+
+
+/* --------------------media query for mobile  start from here --------------------------------------*/
+@media only screen and (max-width:688px) {
+    
+    /* headr responcive part start from here */
+    header{
+        height: 695px;
+    }
+    .main-div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid-setting{
+        margin-top: 112px;
+        margin-left: 50px;
+        margin-left: 16px;
+    }
+    .logo{
+        margin-left:15px;
+        margin-bottom: 62px;
+        margin-top: 50px;
+    }
+    .logo img{
+        width: 329px;
+        height: 259px;
+    }
+/* player section part start here */
+        .all-players{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+         /* headr highlight section part start here */
+        .match{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+    }
+    /* --------------------media query for mobile end from here --------------------------------------*/
+                    /* --------------------end --------------------------------------*/
